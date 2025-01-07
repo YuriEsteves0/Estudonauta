@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "14079231625",
+    "project_id": "estudonautaprojetofinal",
+    "storage_bucket": "estudonautaprojetofinal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14079231625:android:9fa899abec97059b336858",
+        "android_client_info": {
+          "package_name": "com.yuri.projetofinalandroidstudioestudonauta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEFf7fF9aE1V7pY5_3wSBFA6FKwjqnVqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

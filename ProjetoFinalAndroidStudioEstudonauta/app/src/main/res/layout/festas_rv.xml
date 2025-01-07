@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView android:id="@+id/cardFotoFesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tr_15_white"
+        >
+
+        <ImageView android:id="@+id/fotoFesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tr_15_white"
+            android:src="@drawable/fotofesta"
+            android:scaleType="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/transparente"
+        app:cardElevation="0dp"
+        android:layout_below="@id/cardFotoFesta">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardFotoFesta"
+
+            android:background="@drawable/br_15_white"
+            android:paddingBottom="45dp"
+            android:paddingTop="15dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp">
+
+            <RelativeLayout android:id="@+id/infoTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView android:id="@+id/nomeFesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Festa do joaozinho"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_bold"/>
+
+                <TextView android:id="@+id/dataFesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="12-10-2024"/>
+            </RelativeLayout>
+
+            <TextView android:id="@+id/ruaFesta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rua Cracituba - Madureira"
+                    android:fontFamily="@font/montserrat_bold"
+                android:layout_below="@id/infoTop"
+                android:textColor="@color/cinzaTxt"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

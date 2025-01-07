@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bgColor">
+
+    <include android:id="@+id/toolbarXML" layout="@layout/toolbar"/>
+
+    <LinearLayout android:id="@+id/BNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_below="@id/toolbarXML">
+        <TextView android:id="@+id/eventos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eventos"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_gravity="center"/>
+
+        <TextView android:id="@+id/mensagens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensagens"
+            android:textColor="@color/black"
+            android:paddingStart="60dp"
+            android:paddingEnd="60dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_gravity="center"/>
+
+        <TextView android:id="@+id/perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Perfil"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/FL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:layout_below="@id/BNV"/>
+
+
+</RelativeLayout>
