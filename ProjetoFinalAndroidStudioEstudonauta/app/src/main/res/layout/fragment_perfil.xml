@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PerfilFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout android:id="@+id/perfil"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meu Perfil"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/festas"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_below="@id/perfil"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minhas festas"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/config"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_below="@id/festas"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Configurações"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/sair"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_below="@id/config"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/sairTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -16,12 +16,15 @@ import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.yuri.projetofinalandroidstudioestudonauta.Fragments.HomeFragment;
+import com.yuri.projetofinalandroidstudioestudonauta.Fragments.PerfilFragment;
 import com.yuri.projetofinalandroidstudioestudonauta.Helpers.AndroidHelper;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView eventos, mensagens, perfil;
     private HomeFragment homeFragment = new HomeFragment();
+    private PerfilFragment perfilFragment = new PerfilFragment();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
         Typeface customFontMedium = ResourcesCompat.getFont(this, R.font.montserrat_medium);
         Typeface customFontBold = ResourcesCompat.getFont(this, R.font.montserrat_bold);
-
 
         eventos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AndroidHelper.trocarTela(MainActivity.this, PerfilActivity.class    );
+                fragmentManager.beginTransaction().replace(R.id.FL, perfilFragment).commit();
 
                 eventos.setTypeface(customFontMedium);
                 mensagens.setTypeface(customFontMedium);

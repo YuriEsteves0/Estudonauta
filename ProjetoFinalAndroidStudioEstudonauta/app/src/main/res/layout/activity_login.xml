@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <TextView android:id="@+id/loginTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="Faça login com sua conta ou crie sua conta!"
+            android:layout_below="@id/login"
+            android:textColor="@color/black"
+            />
+
+        <EditText android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:hint="Email"
+            android:textColorHint="@color/cinza"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/loginTxt"/>
+
+
+        <EditText android:id="@+id/senhaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=""
+            android:textColor="@color/black"
+            android:hint="Senha"
+            android:textColorHint="@color/cinza"
+            android:inputType="textPassword"
+            android:layout_below="@id/emailInput"/>
+
+        <TextView android:id="@+id/esqueceuSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/senhaInput"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:text="Esqueceu a senha?"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_style"
+            android:textSize="16sp"
+            android:layout_below="@id/esqueceuSenha"/>
+    </RelativeLayout>
+</RelativeLayout>
